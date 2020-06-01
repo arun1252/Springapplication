@@ -212,7 +212,7 @@
           <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
           <contextFolder>${basedir}/src/main/less</contextFolder>
-        </configuration> -->
+        </configuration> 
         <dependencies>
           <dependency>
             <groupId>org.webjars</groupId>
