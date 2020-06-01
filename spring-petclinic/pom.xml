@@ -25,7 +25,7 @@
     <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
     <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
     <webjars-jquery.version>2.2.4</webjars-jquery.version>
-   <wro4j.version>${wro4j.version}</wro4j.version> 
+   <wro4j.version>1.9.0</wro4j.version> 
 
     <jacoco.version>0.8.2</jacoco.version>
 
@@ -191,7 +191,7 @@
      <plugin>
        <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
-        <version>${wro4j.version}</version> 
+        <version>1.9.0</version> 
         <executions>
           <execution>
             <phase>generate-resources</phase>
