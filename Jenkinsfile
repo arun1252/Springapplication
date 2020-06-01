@@ -13,7 +13,7 @@ openshift.withCluster() {
 
 pipeline {
   agent {
-    label "maven"
+    label "master"
   }
   stages {
     stage('preamble') {
