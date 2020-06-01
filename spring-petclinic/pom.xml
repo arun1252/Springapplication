@@ -194,10 +194,10 @@
         </configuration>
       </plugin>
 
-      <plugin>
-        <groupId>ro.isdc.wro4j</groupId>
+     <plugin>
+       <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
-        <version>${wro4j.version}</version>
+        <version>${wro4j.version}</version> 
         <executions>
           <execution>
             <phase>generate-resources</phase>
@@ -205,14 +205,14 @@
               <goal>run</goal>
             </goals>
           </execution>
-        </executions>
+	</executions>
         <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
           <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
           <contextFolder>${basedir}/src/main/less</contextFolder>
-        </configuration>
+        </configuration> -->
         <dependencies>
           <dependency>
             <groupId>org.webjars</groupId>
@@ -220,9 +220,9 @@
             <version>${webjars-bootstrap.version}</version>
           </dependency>
           <dependency>
-            <groupId>org.mockito</groupId>
+           <!-- <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>${mockito.version}</version>
+            <version>${mockito.version}</version> -->
           </dependency>
         </dependencies>
       </plugin>
