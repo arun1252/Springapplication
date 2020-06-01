@@ -163,6 +163,18 @@
       <!-- Spring Boot Actuator displays build-related information if a git.properties
         file is present at the classpath -->
       <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<configuration>
+		<source>${java-version}</source>
+		<target>${java-version}</target>
+		<verbose>true</verbose>
+		<fork>true</fork>
+		<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/bin/javac</executable>
+		<compilerVersion>1.8</compilerVersion>
+	</configuration>
+</plugin>
+      <plugin>
         <groupId>pl.project13.maven</groupId>
         <artifactId>git-commit-id-plugin</artifactId>
         <executions>
