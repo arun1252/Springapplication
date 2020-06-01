@@ -85,10 +85,10 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_URL
   required: true
-  value: https://github.com/ibm-cloud-architecture/cloudpak-for-applications
+  value: https://github.com/arun1252/Springapplication
 - description: Git branch/tag reference
   name: SOURCE_REF
-  value: spring
+  value: master
 - description: WebSphere Docker Image Name -
   name: WEBSPHERE_IMAGE
   required: true
