@@ -45,7 +45,7 @@ pipeline {
       steps {
         sh """
         mvn -v
-        cd spring-petclinic
+        cd cloudmigration
         mvn test
         """
       }
