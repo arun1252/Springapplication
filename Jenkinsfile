@@ -34,7 +34,7 @@ pipeline {
         sh """
         env
         mvn -v
-        cd spring-petclinic
+        cd cloudmigration
         mvn clean install
         """
       }
