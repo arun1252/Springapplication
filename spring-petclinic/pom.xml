@@ -213,12 +213,12 @@
             <artifactId>bootstrap</artifactId>
             <version>${webjars-bootstrap.version}</version>
           </dependency>
-       <!--   <dependency>
+         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>${mockito.version}</version> 
-          </dependency> -->
-        </dependencies>
+          </dependency> 
+	     </dependencies>
       </plugin>
     </plugins>
   </build>
