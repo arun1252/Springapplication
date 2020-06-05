@@ -34,8 +34,8 @@ pipeline {
         sh """
         env
         mvn -v
-        cd cloudmigration
-        mvn clean install
+        cd spring-petclinic
+        mvn package -DskipTests 
         """
       }
     }
@@ -45,8 +45,8 @@ pipeline {
       steps {
         sh """
         mvn -v
-        cd cloudmigration
-        mvn test
+        cd spring-petclinic
+        mvn package -DskipTests 
         """
       }
     }
