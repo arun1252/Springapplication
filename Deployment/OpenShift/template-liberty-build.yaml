@@ -88,7 +88,7 @@ parameters:
   value: https://github.com/arun1252/Springapplication
 - description: Git branch/tag reference
   name: SOURCE_REF
-  value: spring
+  value: master
 - description: WebSphere Docker Image Name -
   name: WEBSPHERE_IMAGE
   required: true
