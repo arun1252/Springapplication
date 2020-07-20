@@ -1,4 +1,5 @@
 trigger:
+on:
   branches:
     include:
     - Springapplication
