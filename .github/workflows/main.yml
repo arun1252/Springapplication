@@ -1,26 +1,17 @@
-#trigger:
+name: 'Terraform'
+
 on:
   push:
-  branches:
-    include:
-    - Springapplication
-  paths:
-    include:
-    - '/Deployment/OpenShift/'
-  
-  pool:
-    vmImage: 'ubuntu-18.04'
-  
-  steps:
-  - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
-    inputs:
-      SourceFolder: '/Deployment/OpenShift/'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)'
-      OverWrite : true
-    
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact'
-    inputs:
-      ArtifactName: 'Artifact'
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
 
