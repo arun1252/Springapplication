@@ -1,0 +1,24 @@
+trigger:
+  branches:
+    include:
+    - Springapplication
+  paths:
+    include:
+    - '/Deployment/OpenShift/'
+  
+  pool:
+    vmImage: 'ubuntu-18.04'
+  
+  steps:
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      SourceFolder: '/Deployment/OpenShift/'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+      OverWrite : true
+    
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      ArtifactName: 'Artifact'
+
