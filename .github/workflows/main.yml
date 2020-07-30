@@ -20,9 +20,7 @@ jobs:
     - name: Terraform Init
         path:deployment/OpenShift/
       run: terraform init
-    - name: Terraform Init
-        path:deployment/OpenShift/
-      run: terraform plan
+    
     
     - name: Terraform Format
       run: terraform fmt -check
